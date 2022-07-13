@@ -16,4 +16,6 @@
 
 ---
 
-#### 
+#### VPN Specific User Logs
+- Runs through all of the logs pulled from the VPN User Script
+- Logs all user logins since implementation, writes them to a csv file
