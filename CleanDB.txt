@@ -1,0 +1,6 @@
+delete from vpnforms
+where exists  (select reqnumber
+               from vpnforms t2
+               where t2.username = vpnforms.username
+                 and t2.reqnumber <> vpnforms.reqnumber
+                 and t2.reqdate > vpnforms.reqdate);

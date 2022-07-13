@@ -1,0 +1,1 @@
+SELECT username,lastvpnlogin from vpnlogins WHERE lastvpnlogin <= current_date - interval '30 days';
